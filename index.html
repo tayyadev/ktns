@@ -1,88 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KTNSInnovations - Your OTT Platform</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KtnsInnovations LLC</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
 
-        header h1 {
-            margin: 0;
-        }
+    header {
+      background: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
 
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
+    header p {
+      font-size: 1.2rem;
+      color: #d1d5db;
+    }
 
-        p {
-            margin: 15px 0;
-        }
+    section {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .intro h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #1f2937;
+      margin-bottom: 0.8rem;
+    }
+
+    .card p {
+      color: #444;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 4rem 0;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: #2563eb;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cta a:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      background: #1f2937;
+      color: #d1d5db;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .intro h2 {
+        font-size: 1.5rem;
+      }
+
+      .cta h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-    <header>
-        <h1>Welcome to KTNSInnovations</h1>
-        <p>Your Gateway to the Best OTT Experience</p>
-    </header>
+  <header>
+    <h1>KtnsInnovations LLC</h1>
+    <p>Custom Software, Trading Bots, AI & Mobile Development Solutions</p>
+  </header>
 
-    <div class="container">
-        <section id="mission">
-            <h2>Our Mission</h2>
-            <p>At KTNSInnovations, our mission is to revolutionize the way people consume digital content by providing
-                a seamless, intuitive, and personalized OTT platform that brings entertainment and information to
-                everyone, anywhere, anytime.</p>
-        </section>
+  <section class="intro">
+    <h2>About Us</h2>
+    <p>
+      KtnsInnovations LLC is a U.S.-based software company providing cutting-edge solutions for traders, startups, and businesses. 
+      We develop trading bots, custom indicators, AI-powered apps, websites, and embedded systems tailored to our client’s needs.
+    </p>
+  </section>
 
-        <section id="vision">
-            <h2>Our Vision</h2>
-            <p>We envision a world where digital entertainment transcends boundaries and is accessible to all. Our
-                vision is to lead the OTT industry by delivering innovative solutions that empower creators and engage
-                audiences through cutting-edge technology and exceptional user experiences.</p>
-        </section>
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+
+      <div class="card">
+        <h3>NinjaTrader Development</h3>
+        <p>Custom indicators, automated strategies, and charting tools for NinjaTrader 7 & 8 platforms.</p>
+      </div>
+
+      <div class="card">
+        <h3>TradingView Pine Script</h3>
+        <p>We build TradingView indicators, alerts, and strategies in Pine Script for precision and speed.</p>
+      </div>
+
+      <div class="card">
+        <h3>MetaTrader (MT4 & MT5)</h3>
+        <p>Expert Advisors, indicators, and custom tools built with MQL4 & MQL5 for MetaTrader platforms.</p>
+      </div>
+
+      <div class="card">
+        <h3>Interactive Brokers & Thinkorswim</h3>
+        <p>Custom trading automation via API integration for IBKR and Thinkorswim scripting.</p>
+      </div>
+
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Websites and web apps using React, Angular, Node.js, .NET, and cloud-based technologies.</p>
+      </div>
+
+      <div class="card">
+        <h3>Mobile App Development</h3>
+        <p>Native and cross-platform Android/iOS app development using Flutter, React Native, and Swift.</p>
+      </div>
+
+      <div class="card">
+        <h3>AI Chatbot Development</h3>
+        <p>Conversational bots using GPT, Rasa, Dialogflow, and custom NLP tools for smarter support.</p>
+      </div>
+
+      <div class="card">
+        <h3>AI Services</h3>
+        <p>Machine Learning models, predictive analytics, recommendation engines, and computer vision using Python, TensorFlow, and OpenAI APIs.</p>
+      </div>
+
+      <div class="card">
+        <h3>Arduino / IoT Development</h3>
+        <p>IoT devices, automation systems, and embedded programming with Arduino and sensors.</p>
+      </div>
+
     </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 KTNSInnovations. All rights reserved.</p>
-    </footer>
+  <section class="cta">
+    <h2>Let’s Bring Your Idea to Life</h2>
+    <a href="mailto:ktnsinnovations@gmail.com">Contact Us</a>
+  </section>
+
+  <footer>
+    <p>© 2025 KtnsInnovations LLC. All rights reserved.</p>
+    <p>
+      Email: <a href="mailto:ktnsinnovations@gmail.com">ktnsinnovations@gmail.com</a> |
+      GitHub: <a href="https://github.com/tayyadev" target="_blank">github.com/tayyadev</a>
+    </p>
+  </footer>
 
 </body>
-
 </html>
